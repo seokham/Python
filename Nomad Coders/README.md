@@ -1,1 +1,1 @@
-https://www.youtube.com/watch?v=M6kQTpIqpLs
+https://nomadcoders.co/python-for-beginners
