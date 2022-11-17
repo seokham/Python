@@ -1,5 +1,5 @@
-[Python for Beginners] <p>
-https://nomadcoders.co/python-for-beginners <p>
+[Python for Beginners] </br>
+https://nomadcoders.co/python-for-beginners </br>
 
 [Selenium for Beginners] <p>
 https://nomadcoders.co/selenium-for-beginners <p>
