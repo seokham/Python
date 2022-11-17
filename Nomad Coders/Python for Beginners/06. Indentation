@@ -1,0 +1,27 @@
+def say_hello():             # 이렇게 함수를 정의한 다음
+  print("hello how r y?")    # Tab 이나 Spacebar 로 칸을 띄운다
+                             # 파이썬은 두 칸을 들여쓰기해야 
+                             # 그 code가 어떤 것 안에 들어가있는지 알 수 있다
+
+
+def say_bye():               # 이 code에서도 똑같이 bye bye 가 say_bye 안에 들어가 있다는 걸 알 수 있다
+  print("bye bye")
+
+say_hello()                  # 하지만 say_hello() 는 say_bye 안에 들어있지 않았다는 걸 알 수 있다
+                             # 이렇게 해서 파이썬은 가독성을 좋게 만들어준다
+                             # 다른 언어에는 이런 기능이 없다. 다른 언어들은 빈 공백을 신경쓰지 않는다
+                             # Typescript, Go, Rust 등등 이런 규칙이 없어서 항상 {} 중괄호를 사용해야한다
+
+
+def say_bye():
+  print("bye bye")
+  say_hello()                # 들여쓰기로 say_hello() 를 쓰면 print("bye bye") code 가 실행될 때 같이 실행된다
+                             # 왜냐하면 say_bye() 안에 say_hello() 를 입력했기 때문이다
+
+
+def say_hello():             # code 가 실행되지 않는다
+print("hello how r y?")      # 여기서 이 code 가 실행되지 않는 이유는
+                             # function 을 만들 때 function 실행될 code를 작성해야하기 때문이다
+                             # def 아래에 위치하여 실행될 code를 작성해야한다
+                             # function 을 호출할 때 function 이 실행될 code 를 작성해야 한다
+                             # 그렇기 때문에 code 가 작동되지 않는 것이다
