@@ -9,4 +9,4 @@ print("hello my name is", my_name)
 print("and i'm", age, "years old")
 
 # variable 중요성을 알 수 있는 코드이다
-# variable은 프로그램에 데이터를 넣기 해주고 재사용할 수 있게 해준다
+# variable 은 프로그램에 데이터를 넣기 해주고 재사용할 수 있게 해준다
