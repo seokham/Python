@@ -1,0 +1,71 @@
+# 출력 결과를 수정하거나 바꾸기 위해 function 에 어떻게 data를 보내면 될지 알아본다
+
+def say_hello():           
+  print("hello how r y?")   # print function 은 항상 무언가를 console 에 나타내고 있다
+                            # 하지만 console 에 나타나는 건 () 안에 어떤 값이든 넣으면
+say_hello()                 # 어떤 값이라도 print function 이 가져다 console 에 뿌려줄 것이다
+                            # 그럼 function 에서 값을 어떻게 받는지 알아보자
+                            # 그리고 그 값을 어떻게 사용하는지도 알아보자
+
+# 항상 hello how r u? 만 출력되지 않게 한다
+# hello (username) how r u? 출력되게 해보자
+# 즉, function 을 호출하는 사람들이 그들의 name 을 보내게 하고
+# hello (username) how r u? 를 출력하도록 할 것이다
+# 그럼 밖에서는 이게 어떻게 보일까?
+
+def say_hello():           
+  print("hello how r y?")
+
+say_hello("hoppang")        # 호출할 때는 이렇게 say_hello() 를 하고, name 까지 작성한다
+                            # 이 code 는 동작하지 않는다. () 로 실행 botton 을 누르게 되고
+                            # function 으로 data를 전송했지만
+                            # 선언한 function 인 print("hello how r y?") 는
+                            # data를 받을 준비가 안되있다
+
+say_hello("hoppang")        # 들여쓰기가 안되어 있는 이 code 는 function 밖에서 data
+                            # "hoppang" 을 보내고 있는데 function 이 만들어질 때
+                            # "hoppang" 값을 받을 공간을 가지고 있지 않다는 것이다
+                            # 그래서 data가 들어갈 수 있는 공간을 제공해야한다
+
+# function 을 만들 때는 data가 들어가는 place holder 같은 공간을 제공해야 한다
+
+def say_hello(name):        # name 을 입력한다. 문자열이 아닌 variable 처럼 쓰면 된다 원하는 아무 값이나
+                             # 넣어줘도 상관없다
+  print("hello how r y?")    # 코드 작성 후 밑줄 표시나 codecheck 등에서 오타 관련 error 가 발생하지 않는다
+                             
+say_hello("hoppang")         # 왜냐하면 say_hello("hoppang") 의 function 이 data 를 받을거라고 알리고
+                             # 있기 때문이다.
+
+# "hoppang" 이라는 data 를 say_hello(name) 의 name 에 값으로 줄 것이다
+# say_hello(name) 의 say_hello function 은 하나의 값을 받을 것이고
+# 그 값은 사용할 수 있게 def say_hello(name) 의 name 에 저장될 것이다
+# 위 code 를 실행해도 error 가 발생하지 않는다
+
+# 정리1)
+def say_hello():            # say_hello() function 는 () 가 비어있어 data 를 받길 원하지 않는다
+                            # data 를 받을 그릇이 없다는 뜻이다
+
+def say_hello(name):        # 하지만 지금의 say_hello(name) function 은 첫 번째 인자로 받을 어떤 data 를 원하고 있다
+                            
+
+# 정리2)
+def say_hello(name):                      # name 이라는 place holer 는 function 안에서 쓸 수 있는 variable 이다
+  print("hello", name, "how war you?")
+
+print(name)                               # name 이 정의되어 있지 않았다는 error 가 발생한다
+                                          # error 의 이유는 name variable 은 say_hello function 안에서만 유효한
+
+
+# 정리3)
+# 이제 우리는 직접 data 를 function 에 넣고 function 은 data 를 받아 사용할 수 있다
+
+def say_hello(name):                      
+  print("hello", name, "how war you?")
+
+say_hello("Redvelvet")
+say_hello("IVE")
+say_hello("Blackpink")
+say_hello("aespa")
+
+# say_hello(name): 에서 name 은 parameter 라고 한다 (place holer = parameter)
+# Redvelvet, IVE, Blackpink, aespa 이런 것들을 argument 라고 한다 (실제 전달한 data = argument)
