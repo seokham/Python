@@ -26,6 +26,7 @@ def say_hello():
 # function 을 사용하지는 않았다
 # call(호출) 하지 않았다고 할 수 있다
 
+
 # function 을 사용해보자
 # function 안에 있는 code를 실행하기 위해서 button 을 눌러야 한다
 # 그 실행 버튼은 () 이다
