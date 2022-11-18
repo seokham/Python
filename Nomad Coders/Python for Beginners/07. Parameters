@@ -7,6 +7,7 @@ say_hello()                 # 어떤 값이라도 print function 이 가져다 c
                             # 그럼 function 에서 값을 어떻게 받는지 알아보자
                             # 그리고 그 값을 어떻게 사용하는지도 알아보자
 
+
 # 항상 hello how r u? 만 출력되지 않게 한다
 # hello (user_name) how r u? 출력되게 해보자
 # 즉, function 을 호출하는 사람들이 그들의 name 을 보내게 하고
@@ -36,7 +37,8 @@ def say_hello(user_name):    # name 을 입력한다. 문자열이 아닌 variab
 say_hello("KARINA")          # 왜냐하면 say_hello("KARINA") 의 function 이 data 를 받을거라고 알리고
                              # 있기 때문이다.
 
-# "hoppang" 이라는 data 를 say_hello(user_name) 의 name 에 값으로 줄 것이다
+
+# "KARINA" 이라는 data 를 say_hello(user_name) 의 name 에 값으로 줄 것이다
 # say_hello(user_name) 의 say_hello function 은 하나의 값을 받을 것이고
 # 그 값은 사용할 수 있게 def say_hello(user_name) 의 name 에 저장될 것이다
 # 위 code 를 실행해도 error 가 발생하지 않는다
