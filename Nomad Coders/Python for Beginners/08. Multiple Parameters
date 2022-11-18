@@ -1,0 +1,11 @@
+# parameter 는 function 으로 전달하는 data 를 데이터를 저장하기 위한 placeholder 라고 배웠다
+# parameter 를 추가할 때는 ,(콤마) 를 쓰고 다른 parameter 를 추가하면 된다
+# 
+# 
+
+def say_hello(name, age):                # age parameter 를 추가하여 2개의 데이터를 위한 공간을 만들었
+  print("hello", name, "how are you?")
+
+say_hello("student")                     # 첫 번째 data 는 student 가 되겠지만 두 번째 data 는 존재하지 않아서
+print("hello world")                     # code 를 실행하면 error 를 만들것이다
+
