@@ -9,3 +9,10 @@ say_hello("KARINA")                     # 첫 번째 data 는 student 가 되겠
                                          # say_hello(): function 는 2 개의 data 를 받는다고 정의했기 때문이다 
                                          # call(호출) 은 call = () = 실행버튼 이다
                                          # say_hello() function 을 call 할 때 
+
+
+def say_hello(name, age):                
+  print("hello", name, "how are you?")
+  print("you are", age, "years old")
+say_hello("KARINA", 12)                     # 두 번째 argument 까지 보내준다
+                                            # 보내줄 data 의 순서도 맞게 잘 작성해야한다
