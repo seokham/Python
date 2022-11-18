@@ -1,19 +1,19 @@
-my_name = hoppang  # 코드를 실행하면 에러
+my_name = student  # 코드를 실행하면 에러
                    # 파이썬은 hoppang 이 variable 로 인식
                    # 하지만 hoppang 은 어디에도 variable 을 만들지 않았음
                    # 그래서 에러가 발생
 
 
-my_name = "hoppang" # 파이썬에게 hoppang 이 아닌 my_name 이 variable 이라고
+my_name = "student" # python 에게 hoppang 이 아닌 my_name 이 variable 이라고
                     # 알려준다 
 print(my_name)
 
 
-# 파이썬에게 hoppang 이 아닌 my_name 이 variable 이라고 알려주는 방법
+# 파이썬에게 student 이 아닌 my_name 이 variable 이라고 알려주는 방법
 
-my_name = "hoppang" # my_name variable 이 hoppang 이라는 문자열이 되었
+my_name = "student" # my_name variable 이 student 라는 문자열이 되었
 
-print(my_name)      # 이제 파이썬은 hoppang 이 variable 이라는 것을 알게 되어
+print(my_name)      # 이제 python 은 student 가 variable 이라는 것을 알게 되어
                     # 정상적인 출력이 된다. 이게 바로 "데이터 타입"이다
 
 
