@@ -1,0 +1,60 @@
+# ATM Password 가 맞을 때
+
+password_correct = True
+
+if password_correct:            # 만약 pw 가 맞다면 here is your money 를 출력 시킨다
+  print("Here is your money")
+
+
+# ATM Password 가 틀릴 때
+
+password_correct = False
+
+if password_correct:
+  print("Here is your money")
+else:                           # pw 가 틀리면 어떻게 할지는 else 를 적어주면 된다
+  print("Wrong password")
+  
+  
+# elif
+# 복권의 1등 당첨 번호가 10 이라고 하자
+
+winner = 10
+
+if winner > 10:                        # winner 의 값 10 은 10 보다 크지 않다 (False)
+  print("Winner is greater than 10")   # False 라서 print는 실행되지 않는다
+
+elif winner < 10:                      # winner 의 값 10 은 10 보다 작지 않다 (False)
+  print("Winner is greater than 10")   # False 라서 print는 실행되지 않는다
+
+else:                                  # if 도 False, elif 도 False 라면
+  print("Winner is 10")                # Python 은 elese 를 실행할 수 밖에 없다
+
+# Python 은 if 의 조건을 확인하고, 그 다음 elif 의 조건을 확인한다
+# elif 는 code 에 또 다른 대안과 조건을 넣을 수 있도록 해준다
+# else 는 조건이 True 가 아닐 때 대안만 제공한다
+# elif 나 else 를 사용하는 것은 선택사항이다
+
+
+winner = 20
+
+if winner > 10:
+  print("Winner is greater than 10")    # if 가 True 라서 이 code 가 출력되는 것을 알 수 있다
+
+elif winner < 10:
+  print("Winner is greater than 10")
+
+else:
+  print("Winner is 10")
+
+
+winner = 5
+
+if winner > 10:
+  print("Winner is greater than 10")
+
+elif winner < 10:
+  print("Winner is greater than 10")    # elif 가 True 라서 이 code 가 출력되는 것을 알 수 있다
+
+else:
+  print("Winner is 10")
