@@ -28,3 +28,15 @@ def say_hello(user_name=):
 say_hello("KARINA")      # KARINA 로 user_name 에 전달하면 hello KARINA 라고 출력된다
 say_hello()              # () 에 name 이 없을 땐 anonymous 로 출력되게 만들어본다
 
+
+def say_hello(user_name="anonymous"):    # = "anonymous" 이렇게 적어주면 () 에 name 이 없을 땐
+  print("hello", user_name)              # anonymous 로 출력해준다
+
+say_hello("KARINA")                      # say_hello 함수를 KARINA 라는 data 로 첫번째 argument 를 call 한다
+say_hello()                              # () 안에 argument 가 없으니 Python 은 user_name 에
+                                         # 아무것도 없다는 것을 알게 된다 그래서 Python 이 error 를 보여주는 대신
+                                         # user_name 을 anonymous 로 대체해준다
+                                         # 즉, print("hello", user_name) 이곳 user_name 으로 anonymous 가 들어간다
+
+# 기본값을 사용하면 이렇게 유용하다 사용자들에게 error 를 보여주지 않게 해준다
+# 사용자가 parameter 없이 함수를 호출하 경우를 관리해준다
