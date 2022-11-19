@@ -10,32 +10,32 @@ say_hello()                 # 어떤 값이라도 print function 이 가져다 c
 
 # 항상 hello how r u? 만 출력되지 않게 한다
 # hello (user_name) how r u? 출력되게 해보자
-# 즉, function 을 호출하는 사람들이 그들의 name 을 보내게 하고
+# 즉, function 을 call 하는 사람들이 그들의 name 을 보내게 하고
 # hello (user_name) how r u? 를 출력하도록 할 것이다
 # 그럼 밖에서는 이게 어떻게 보일까?
 
 def say_hello():           
   print("hello how r y?")
 
-say_hello("KARINA")        # 호출할 때는 이렇게 say_hello() 를 하고, name 까지 작성한다
+say_hello("KARINA")         # call 할 때는 이렇게 say_hello() 를 하고, name 까지 작성한다
                             # 이 code 는 동작하지 않는다. () 로 실행 botton 을 누르게 되고
                             # function 으로 data를 전송했지만
                             # 선언한 function 인 print("hello how r y?") 는
                             # data를 받을 준비가 안되있다
 
-say_hello("KARINA")        # 들여쓰기가 안되어 있는 이 code 는 function 밖에서 data
-                            # "KARINA" 을 보내고 있는데 function 이 만들어질 때
-                            # "KARINA" 값을 받을 공간을 가지고 있지 않다는 것이다
+say_hello("KARINA")         # 들여쓰기가 안되어 있는 이 code 는 function 밖에서 data 인 "KARINA" 를
+                            # 보내고 있는데 function 이 만들어질 때 "KARINA" 값을 받을 공간을
+                            # 가지고 있지 않다는 것이다
                             # 그래서 data가 들어갈 수 있는 공간을 제공해야한다
 
 # function 을 만들 때는 data가 들어가는 place holder 같은 공간을 제공해야 한다
 
-def say_hello(user_name):    # name 을 입력한다. 문자열이 아닌 variable 처럼 쓰면 된다 원하는 아무 값이나
+def say_hello(user_name):    # user_name 을 입력한다. 문자열이 아닌 variable 처럼 쓰면 된다 원하는 아무 값이나
                              # 넣어줘도 상관없다
   print("hello how r y?")    # 코드 작성 후 밑줄 표시나 codecheck 등에서 오타 관련 error 가 발생하지 않는다
                              
-say_hello("KARINA")          # 왜냐하면 say_hello("KARINA") 의 function 이 data 를 받을거라고 알리고
-                             # 있기 때문이다.
+say_hello("KARINA")          # 왜냐하면 say_hello("KARINA") 의 function 이 data 를 받을거라고 알리고 있기
+                             # 때문이다.
 
 
 # "KARINA" 이라는 data 를 say_hello(user_name) 의 name 에 값으로 줄 것이다
@@ -55,7 +55,7 @@ def say_hello(user_name):                   # name 이라는 place holer 는 fun
   print("hello", user_name, "how are you?")
 
 print(user_name)                            # name 이 정의되어 있지 않았다는 error 가 발생한다
-                                            # error 의 이유는 user_name variable 은 say_hello function 안에서만 유효한
+                                            # error 의 이유는 user_name variable 은 say_hello function 안에서만 유효한다
 
 
 # 정리3)
