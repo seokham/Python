@@ -1,0 +1,23 @@
+# Python Casino
+# Computer 가 숫자 하나를 선택하고, user 도 숫자 하나를 선택한다
+# user 가 숫자를 정확하게 맞추면 이기고, 아니면 지는 게임이다
+
+user_choice = int(input("Choose number : "))
+# input function 은 user 에게 input 을 요청하고
+# user 가 입력한 문자열을 반환할 것이다
+
+pc_choice = 50
+
+if user_choice == pc_choice:
+  print("You won!")
+  
+elif user_choice > pc_choice:
+  print("Lower!")
+
+elif user_choice < pc_choice:
+  print("Higher!")
+  
+  
+# while
+
+3분 3초
