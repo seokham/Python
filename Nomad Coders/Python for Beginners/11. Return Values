@@ -3,7 +3,7 @@
 def tax_calc(money):
   print(money * 0.35)
 
-tax_calc(10000)        # 이 function 의 결과를 받아서 나중에 내 code 에 쓰고 싶다면?
+tax_calc(10000)                     # 이 function 의 결과를 받아서 나중에 내 code 에 쓰고 싶다면?
 
 
 def tax_calc(money):
@@ -27,8 +27,8 @@ def tax_calc(money):
 def pay_tax(tax):
   print("thank u for paying", tax)
 
-to_pay = tax_calc(1000)              # to_pay 라는 variable 을 추가해보자.
-                                     # 이건 tax_calc function의 return 값과 동일하다.
+to_pay = tax_calc(1000)              # to_pay 라는 variable 을 추가해보자
+                                     # 이건 tax_calc function의 return 값과 동일하다
                                      # 즉, to_pay 값은 내야할 세금이 된다. 그래서 to_pay = tax = 350.0 성립!
 pay_tax(to_pay)                      # 그렇다면 pay_tax() 의 () 안에 to_pay variable 을 넣을 수 있다는 것이다
                                      # 실행해보면 잘 동작한다
@@ -41,14 +41,14 @@ pay_tax(to_pay)                      # 그렇다면 pay_tax() 의 () 안에 to_p
 # 학습자는 code 순서 때문에 헷갈릴 수 있다
 # code 순서를 바꾸어도 결과 값은 동일하다
 
-# 아래 function 밖에서 1000 을 넣는 것이 먼저
+# 아래 function 밖에서 1000 을 넣는 것이 먼저이다
 
 def tax_calc(money):
   return(money * 0.35)        
 
 to_pay = tax_calc(1000)
 
-# 아래 function 밖에서 return 된 to_pay 값을 넣는 것이 먼저!
+# 아래 function 밖에서 return 된 to_pay 값을 넣는 것이 먼다다
 
 def pay_tax(tax):
   print("thank u for paying", tax) 
