@@ -1,0 +1,141 @@
+# user 가 음주할 수 있는 나이인지 아닌지 알아내는 코드를 만든다
+# input 은 오직 하나의 argument 가 들어갈 수 있다
+
+input("How old are u?")    # Console(Terminal) 에 답을 적어야 code 가 종료된다
+
+
+# input 으로 user 에게 질문을 할 수 있게 하고, user 는 여러분에게 답을 한다
+# user 가 무엇을 답을 하던 그 값이 이 function 의 return 값이 된다
+# 따라서 이 function 의 값을 저장할 곳이 있어야한다
+# 이 function 의 변환 값을 variable 에 저장해야한다
+
+age = input("How old are u?")    # Console(Terminal) 에 13 을 적으면
+print("user answer", age)        # user answer 13 이라고 출력된다
+
+
+# Type function
+
+age = input("How old are u?")
+print(type(age))
+
+# <class 'str'> 라고 출력이 된다
+# age variable 의 type 이 String 인 것을 확인할 수 있다
+# 이 String 을 가져다가 숫자로 변환 해본다
+# 변환하는 이유는 나이의 많거나 작은지 확인해야하기 때문이다
+
+
+# age 가 String 이면, 숫자 18 과 서로 비교하는 것은 불가능하다
+# input function 을 int function 으로 감싸주는 것이 필요하다
+# ("") 안에 있는 문자가 int function 에 전달되면
+# 이것도 Python 이 제공하는 built-in function 이다
+# 그 결과 값은 int function 이 따옴표를 제거해준 int(정수) 값이다
+
+# user 에게 질문하기 위해서 input function 을 call 할 것이다
+# user 가 String 형태로 응답하면 code는 int 를 call 하고
+# int 는 user 가 작성한 String 을 받고
+# int 는 String 을 숫자로 변환할 것이다
+
+age = int(input("How old are u?"))
+
+if age < 18:
+  print("You can't drink.")
+else
+  print("Go ahead!")
+
+
+# and
+# and 는 if, elif, else 에서도 동작한다
+
+# user 가 18 이라고 답하면 어떻게 출력되는지 확인해보자
+
+age = int(input("How old are u?"))
+
+if age < 18:
+  print("You can't drink.")
+
+elif age > 18 and age < 35:    # and 는 양쪽 조건 모두가 True 이어야 한다
+  print("You drink beer!")     # 전체 조건이 True 인 것이다
+                               # 양쪽의 앞이 False 이고, 뒤가 True 면 전체조건은 False 이다
+else:
+  print("Go ahead!")
+
+# Go ahead! 라고 출력된다
+# 왜냐하면 if 와 elif 두 가지 조건에 모두 false 이기 때문에
+# else 의 code 를 출력했다
+
+
+# user 가 18 이라고 답하면 어떻게 출력되는지 확인해보자
+
+age = int(input("How old are u?"))
+
+if age < 18:
+  print("You can't drink.")
+
+elif age >= 18 and age <= 35:
+  print("You drink beer!")
+
+else:
+  print("Go ahead!")
+
+# You drink beer! 라고 출력된다
+# age 는 18 로 18 보다 크거나 같았고
+# age 는 35 보다 작거나 같았다
+
+
+# user 가 36 이라고 답하면 어떻게 출력되는지 확인해보자
+
+age = int(input("How old are u?"))
+
+if age < 18:
+  print("You can't drink.")
+
+elif age >= 18 and age <= 35:
+  print("You drink beer!")
+
+else:
+  print("Go ahead!")
+
+# Go ahead! 라고 출력된다
+# 36 은 18 보다 크거나 같지만 (True)
+# 35 보다 작거나 같지는 않다  (False)
+# 그래서 else 의 code 를 출력했다
+
+
+# OR 은 앞 부분 '또는' 뒷부분이 True 인지 확인
+# 앞, 뒷부분 양쪽 모두가 True 라면 상관없지만
+# 반드시 한 쪽은 True 여야 한다
+# and 에서는 양쪽 모두가 True 여야 하지만
+# OR 에서는 한 쪽은 꼭 True 여야 한다
+
+# user 가 60 이라고 답하면 어떻게 출력되는지 확인해보자
+
+age = int(input("How old are u?"))
+
+if age < 18:
+  print("You can't drink.")
+
+elif age >= 18 and age <= 35:
+  print("You drink beer!")
+
+elif age == 60 or age == 70:            # 뒷 부분의 조건은 False 였다
+  print("Birthday party!")
+
+else:
+  print("Go ahead!")
+
+# Birthday party! 가 출력된다.
+# 앞 쪽의 조건에 부합해서 출력이 되었다
+
+
+# 한 쪽이 False 라면 False
+# True and True == True
+# False and True == False
+# True and False == False
+# False and False == False
+
+
+# 한 쪽이라도 True 면 True
+# True or True == True
+# False or True == True
+# True or False == True
+# False or False == False
