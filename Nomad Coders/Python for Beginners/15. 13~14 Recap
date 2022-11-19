@@ -1,0 +1,48 @@
+winner = 50
+
+if winner != 10:    # 50 과 10 은 같지 않기 때문에 이 부분은 True 이다
+  print("If")
+
+elif winner == 50:
+  print("If2")      # 50 과 50 은 같다. 하지만 이 code 는 출력되지 않는다
+
+else:  
+  print("Else")
+  
+ 
+ # 순서대로 체크하고 True 가 발견되면 그 code 를 실행한다
+ 
+ winner = 50
+
+if winner <= 10:
+  print("If 1")
+
+elif winner <= 25:
+  print("elif 1")
+
+elif winner == 0:
+  print("elif 2")
+
+elif winner == 50:
+  print("elif 3")    # True
+
+else:  
+  print("Else")
+  
+  
+winner = 25
+
+if winner <= 10:
+  print("If 1")
+
+if winner <= 25:
+  print("if 2")    # True
+
+elif winner == 0:
+  print("elif 1")
+
+elif winner == 50:
+  print("elif 2")
+
+else:  
+  print("Else")  
