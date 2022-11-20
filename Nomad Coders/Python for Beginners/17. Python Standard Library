@@ -1,9 +1,14 @@
-# Python Casino
-# Computer 가 숫자 하나를 선택하고, user 도 숫자 하나를 선택한다
-# user 가 숫자를 정확하게 맞추면 이기고, 아니면 지는 게임이다
+"""
+Python Casino
+Computer 가 숫자 하나를 선택하고, user 도 숫자 하나를 선택한다
+user 가 숫자를 정확하게 맞추면 이기고, 아니면 지는 게임이다
+"""
 
-# input function 은 user 에게 input 을 요청하고
-# user 가 입력한 문자열을 반환할 것이다
+
+"""
+input function 은 user 에게 input 을 요청하고
+user 가 입력한 문자열을 반환할 것이다
+"""
 
 user_choice = int(input("Choose number : "))
 pc_choice = 50
@@ -17,31 +22,40 @@ elif user_choice > pc_choice:
 elif user_choice < pc_choice:
   print("Higher!")
   
-  
-# Python Standard Library (Python 공식 문서 참고)
-# 많은 function 이 있는 그룹이다
-# Python 을 설치하면 안에서 제공된다. 언어에 이미 포함되어 있다
-# built-in function 은 항상 사용할 수 있는 function 을 의미한다
-# print ,input, int 를 사용하기 위해 code 를 작성하지 않아도 항상 존재한다
-# Python Standard Library 은 built-in function 외에도 수 많은 function 이 있다
-# Python 과 함께 미리 설치되어 있지만 양이 너무 많아서 항상 code에는 존재하지 않는다
-# 대신 우리가 해야할 것은 import 해오는 일이다
 
-# random moudule 에는 random 숫자 생성과 관련된 많은 함수가 있다
-# randint 라는 function 은 random 하게 정수를 주는 function 이다
-# 공식 문서에서 그대로 복사해 붙여넣기 한다
+"""
+Python Standard Library (Python 공식 문서 참고)
+많은 function 이 있는 그룹이다
+Python 을 설치하면 안에서 제공된다. 언어에 이미 포함되어 있다
+built-in function 은 항상 사용할 수 있는 function 을 의미한다
+print ,input, int 를 사용하기 위해 code 를 작성하지 않아도 항상 존재한다
+Python Standard Library 은 built-in function 외에도 수 많은 function 이 있다
+Python 과 함께 미리 설치되어 있지만 양이 너무 많아서 항상 code에는 존재하지 않는다
+대신 우리가 해야할 것은 import 해오는 일이다
+"""
 
-# 1 부터 50 사이의 숫자를 원할 때 pc_choice = random.randint(1, 50)
-# 이렇게 작성한다. 하지만 여기까지만 작성하면 바로 code error 가 나타나거나
-# code 를 실행해도 실행되지 않는다
-# 왜냐하면 random 은 module 의 이름일뿐이다
-# random module 에서 randint function 을 import 하기 위해 code 맨 윗 줄에
-# from random import randint 라고 작성한다
-# from (module) 에서 (function) 을 import 하라 라는 뜻이 담겨있다
+"""
+random moudule 에는 random 숫자 생성과 관련된 많은 함수가 있다
+randint 라는 function 은 random 하게 정수를 주는 function 이다
+공식 문서에서 그대로 복사해 붙여넣기 한다
+"""
 
-# random.randint function 을 module 에서 가져왔다
-# 이 module 은 Python Standard Library 에 기본적으로 포함되어 있지만
-# import 해야한다. 어디에서든 사용할 수 있는 int, input, print 와는 아주 다르다
+"""
+1 부터 50 사이의 숫자를 원할 때 pc_choice = random.randint(1, 50)
+이렇게 작성한다. 하지만 여기까지만 작성하면 바로 code error 가 나타나거나
+code 를 실행해도 실행되지 않는다
+왜냐하면 random 은 module 의 이름일뿐이다
+random module 에서 randint function 을 import 하기 위해 code 맨 윗 줄에
+from random import randint 라고 작성한다
+from (module) 에서 (function) 을 import 하라 라는 뜻이 담겨있다
+"""
+
+
+"""
+random.randint function 을 module 에서 가져왔다
+이 module 은 Python Standard Library 에 기본적으로 포함되어 있지만
+import 해야한다. 어디에서든 사용할 수 있는 int, input, print 와는 아주 다르다
+"""
 
 from random import randint                  
 user_choice = int(input("Choose number."))
@@ -56,16 +70,7 @@ elif user_choice > pc_choice:
 elif user_choice < pc_choice:
   print("Higher! Computer chose", pc_choice)
 
-# 1~50 까지 숫자를 입력해본다
-# 컴퓨터가 선택한 숫자가 출력이 된다
-
-
-
-
-
-
-
-
-
-
-
+"""
+1~50 까지 숫자를 입력해본다
+컴퓨터가 선택한 숫자가 출력이 된다
+"""
