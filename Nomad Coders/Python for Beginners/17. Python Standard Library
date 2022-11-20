@@ -56,6 +56,8 @@ elif user_choice > pc_choice:
 elif user_choice < pc_choice:
   print("Higher! Computer chose", pc_choice)
 
+# 1~50 까지 숫자를 입력해본다
+# 컴퓨터가 선택한 숫자가 출력이 된다
 
 
 
