@@ -1,1 +1,56 @@
-1
+'''
+Tuples 과 list 의 차이점은
+Tuples 은 불변성을 가지게 된다. 즉, Tuples 을 변경하지 못한다는 것
+'''
+
+days = ["Mon","Tue","Wed"]        # 이게 바로 list 이다. 그럼 Tuples 는 어떻게 만들까?
+
+days = ("Mon","Tue","Wed")        # [] 대신 () 를 넣으면 된다
+
+days.                             # 사용할 수 있는 method 리스트에는 append, revers, clear
+                                  # remove 가 없다
+
+'''
+반면 list 는  append, revers, clear, remove 가 method 목록에 있다
+list 는 수정할 수 있고, Tuples 는 수정할 수 없다
+'''
+
+
+days = ("Mon","Tue","Wed")        
+print(days[0])                    # Tuples 을 만들 땐 (), 그 안의  item 에 접근할 땐 []
+                                  # Tuples 도 index 는 0 부터 시작한다
+
+
+'''
+item 은 뒤에서 앞으로 접근할 수도 있다
+0 부터 시작하는 것 대신에, -1로 시작할 수 있다
+이것은 Tuples 와 list 둘 다 사용할 수 있다
+
+'''
+
+days = ("Mon","Tue","Wed")        
+
+print(days[-1])                   # -1 을 입력한다면 마지막 item 을 가져올 것이다
+                                  # -2 를 입력하면 "Tue" 를 -3 을 입력하면 "Mon" 을 입력
+
+
+'''
+나중에는 program 에서 어떤 것을 불변으로 할지
+어떤 것을 변하게 할지 잘 선택해야한다
+list Tuples 둘 다 정렬된 item 의 집합이다
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
