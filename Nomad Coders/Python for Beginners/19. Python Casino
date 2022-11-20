@@ -3,7 +3,8 @@
 while 문을 사용해서 user 와 Computer 가 뽑은 숫자가
 서로 일치할 때 까지 반복하는 code 를 만들 것이다
 user 는 Computer 가 뽑는 숫자를 모르게 할 것이기 때문에
-Computer 의 숫자는 출력되지 않게 한다
+Computer 의 숫자는 출력되지 않게 하고
+user 가 입력한 숫자보다 낮은지 높은지 Hint 만 준다
 Computer 가 뽑은 숫자를 찾을 때 까지 계속 되는 game 이다
 """
 
