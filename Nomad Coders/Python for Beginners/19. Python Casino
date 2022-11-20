@@ -23,10 +23,10 @@ while playing:                                      # while 은 playing 의 조�
     playing = False
 
   elif user_choice > pc_choice:
-    print("Lower! Computer chose", pc_choice)
+    print("Lower!")
   
   elif user_choice < pc_choice:
-    print("Higher! Computer chose", pc_choice)
+    print("Higher!")
 
 """
 pc_choice 변수는 1~50 사이에 랜덤한 숫자 1개를 가지게 되고
