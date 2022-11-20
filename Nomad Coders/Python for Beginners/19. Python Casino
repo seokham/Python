@@ -1,1 +1,38 @@
-1
+"""
+앞서 배웠던 Casino 를 while 문을 사용해서 만들어본다
+while 문을 사용해서 user 와 Computer 가 뽑은 숫자가
+서로 일치할 때 까지 반복하는 code 를 만들 것이다
+user 는 Computer 가 뽑는 숫자를 모르게 할 것이기 때문에
+Computer 의 숫자는 출력되지 않게 한다
+Computer 가 뽑은 숫자를 찾을 때 까지 계속 되는 game 이다
+"""
+
+from random import randint                  
+
+print("Welcome to Python Casino")
+ 
+pc_choice = randint(1, 50)
+
+playing = True
+
+while playing:                                      # while 은 playing 의 조건이 True 일 때만 동작한다
+  user_choice = int(input("Choose number : "))
+  
+  if user_choice == pc_choice:
+    print("You won!")
+    playing = False
+
+  elif user_choice > pc_choice:
+    print("Lower! Computer chose", pc_choice)
+  
+  elif user_choice < pc_choice:
+    print("Higher! Computer chose", pc_choice)
+
+"""
+pc_choice 변수는 1~50 사이에 랜덤한 숫자 1개를 가지게 되고
+playing 변수는 True 를 가지게 되고
+playing 이 True 니까 while 이 작동하게 되고
+유저가 입력한 숫자와 컴퓨터가 랜덤에서 뽑은 숫자가 일치하지 않았을 때
+elif 2가지 중에 한 곳으로 가서 출력하게 되는데,
+아직 playing 이 True 를 가지고 있기 때문에 다시 while 로 되돌아간다
+"""
