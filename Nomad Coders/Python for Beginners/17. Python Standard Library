@@ -43,6 +43,19 @@ elif user_choice < pc_choice:
 # 이 module 은 Python Standard Library 에 기본적으로 포함되어 있지만
 # import 해야한다. 어디에서든 사용할 수 있는 int, input, print 와는 아주 다르다
 
+from random import randint                  
+user_choice = int(input("Choose number."))
+pc_choice = randint(1, 50)
+
+if user_choice == pc_choice:
+  print("You won!")
+  
+elif user_choice > pc_choice:
+  print("Lower! Computer chose", pc_choice)
+
+elif user_choice < pc_choice:
+  print("Higher! Computer chose", pc_choice)
+
 
 
 
