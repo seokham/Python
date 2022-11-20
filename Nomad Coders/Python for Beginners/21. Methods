@@ -1,1 +1,51 @@
-1
+'''
+list
+일주일의 모든 요일을 목록으로 만드는 code 를 짠다면
+지금까지 배운 지식으로 짠다면 아래와 같을 것이다
+'''
+
+mon = "Mon"
+tue = "Tue"
+wed = "Wed"
+thu = "Thu"
+fri = "Fri"
+
+'''
+이것은 variable 의 연속일 뿐 list 가 아니다
+list 는 variable 1개 안에 있어야 한다
+1개의 variable 안에 우리는 모든 data 를 넣을 수 있어야 한다
+variable 1개가 모든 요일을 가지고 있어야 한다
+'''
+
+days_of_week = "Mon, Tue, Wed, Thu, Fri"
+print(days_of_week)
+
+
+'''
+만약 내가 한 주의 마지막 요일을 요청하면
+아니면 일주일 중 3번 째의 요일을 요청하면
+어떻게 해야할까?
+이것이 우리가 list 가 필요한 이유다
+'''
+
+
+days_of_week = ["Mon","Tue","Thur","Fri"]    # list 를 쓰려면 [] 대괄호를 써야한다
+print(days_of_week)
+
+# 실행해보면 출력 형태가 길기만 하고 결과는 비슷하다고 느껴질 것이다.
+# 그건 아직 Method 를 배우지 않아서 그렇다
+
+name = "KARINA"            # "KARINA" 는 단순한 TEXT 가 아니다 사실 이 TXT는 내부에 다양한
+                           # function 들을 가지고 있다
+print(name.endwith("o"))   # . 뒤에 보이는 모든 것들은 name 이란 variable 에 결합되어 있다
+
+'''
+method 는 data 에 결합 function 이다
+print, input 등은 data 와 결합되어 있지 않다
+우리가 쓰고 싶을 때 어디서나 쓸 수 있는 function 이다
+endswith 은 String 에서만 사용할 수 있는 function 이다
+'''
+
+# 위 code 를 아래처럼 바꿀 수도 있다
+
+print("KARINA".endwith("o"))
