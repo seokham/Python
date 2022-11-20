@@ -1,1 +1,30 @@
-1
+'''
+Python 의 datastructure, 즉 data 는 method 라는 걸 갖는다
+list, Tuple 에도 method 가 있고, player dictionary 에도 있다
+'''
+
+player = {
+  'name' : 'KARINA',
+  'age' : 12,
+  'alive' : True 
+}
+print(player.get('age'))      # player 에 . 을 입력하고 나오는 method 를 확인해보자
+                              # user 의 age 를 가져와보자 code 를 실행한다
+                              # 정상적으로 age 의 값을 가져왔다
+
+'''
+이 code 는 list 와는 굉장히 다르다
+list 에서는 이렇게 할 수 없었다. 0, 1, 2 index 를 같이 써야 했다
+왜냐하면 정렬되어 있었기 때문이다
+하지만 dictionary 에서는 key-value pair (키-값 쌍) 으로 이루어져있다
+name, age, alive 는 key
+KARINA, 12, True 는 value 이다
+''' 
+
+'''
+dictionary 용도와 list 의 용도는 아주 다르다
+숫자 목록이나 TODO 목록, 어떠한 목록이 있다면 그건 list 나 Tuple 가 될 수 있다
+
+'''
+
+4분 1초
