@@ -1,39 +1,44 @@
-"""
+'''
 while 은 if 같은 다른 종류의 조건문이다
 while 은 중지 할 때 까지 계속 실행된다
-"""
+'''
 
 while True:
   print("Hi i'm True")
 
-"""
+'''
 절대 멈추지 않는다. 계속 실행된다
 mem 을 다 쓸 때까지 이 console 에 계속 출력한다 
-"""
+'''
 
 
-"""
+'''
 while 을 사용하는 code 로 멈추는 code 까지 작성해본다
 user 가 뛰어다닌 distance() 는 0 으로 두고
 user 가 20km 미만의 distance 를 달린 동안만 i'm running 을 print 한다
-"""
+'''
 
 distance = 0
 
-while distance < 20:                    # 이 코드는 영원히 실행될 것이다
-  print("i'm running", distance, "km")  # 왜냐하면 distance 는 항상 0 일거고
-                                        # 0은 항상 20 보다 작으니 True 이다
-                                        # 이 조건을 멈춰보자
+while distance < 20:                      # 이 코드는 영원히 실행될 것이다
+  print("i'm running", distance, "km")    # 왜냐하면 distance 는 항상 0 일거고
+                                          # 0은 항상 20 보다 작으니 True 이다
+                                          # 이 조건을 멈춰보자
   distance = distance + 1
 
-"""
+'''
 distance = distance + 1
 while 문 부터 아래로 code 를 한 줄씩 읽게 되는데
 print 문에서는 0 값을 받고 0 을 출력한 뒤에 
-distance = distance + 1 에서 + 1 이 계산되어 1 값을 만든다
-다시 while 문으로 돌아가서 1 값이 된 distance 는 20 보다 작은지
-비교를 거친 후 조건에 부합하면 다시 print 문으로 내려가서 1 값을
-출력하고, 다시 아랫 줄 code로 내려가서 1 + 1 이 되어 distance 는
-2 가 된다.
+distance = distance + 1 에서
++ 1 이 계산되어 1 값을 만든다
+
+다시 while 문으로 돌아가서 
+1 값이 된 distance 는 20 보다 작은지 비교를 거친 후
+조건에 부합하면 다시 print 문으로 내려가서 1 값을 출력하고
+
+다시 아랫 줄 code로 내려가
+1 + 1 이 되어 distance 는 2 가 된다.
+
 이 과정이 while 조건문과 다를 때 까지 멈추지 않는 것이다.
-"""
+'''
