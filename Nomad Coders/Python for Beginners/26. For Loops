@@ -1,1 +1,95 @@
-1
+'''
+구글, 트위터 등 이 tuple 에 있는 website 가 정상적으로 접속이 되는지
+아니면 서버가 down 되었는지 확인할 것이다.
+
+그전에 우리는 아직 모르는 것이 있는데, 
+Python 한테 tuple 안에 있는 각각의 item 을 사용해서 
+code 를 실행하는 법 아직 배우지 않은 상태이다
+'''
+
+
+websites = (
+  "google.com",
+  "airbnb.com",
+  "twitter.com",
+  "facebook.com"
+)
+
+websites[0]
+
+'''
+websites[0]
+같은 방식으로 code 를 작성하면 목표에 맞게 동작할 것이다
+websites[1], websites[2]
+이것도 가능하지만 재미도 없고 시간도 오래 걸린다
+
+그리고 이런 방식이면 4개의 website 만 가지고 있어야 하고
+그게 아니라면 code 가 완전히 바뀌어야할 것이다
+그래서 이 방법은 좋지 않다
+
+list 가 얼마나 긴지 신경쓰지 않아도 되며
+Python 에게 list 의 각 item 을 활용해서
+자동으로 code 를 실행하라고 할 방법을 찾아야한다
+'''
+
+
+'''
+이걸 위해서 for 반복문(loop) 라는 걸 사용한다
+for 반복문을 만들기 위해서는
+첫 번째 문자 for 라고 작성 후 띄어쓰기 해준다
+
+websites tuple 안에 있는 각각의 item 을 사용해서
+code를 실행하는 것이 필요하다
+hello 를 출력하는 code 를 작성해보자
+'''
+
+websites = (
+  "google.com",
+  "airbnb.com",
+  "twitter.com",
+  "facebook.com"
+)
+
+for each in websites:
+  print("hello")
+
+'''
+hello 를 총 4번 출력했다. 
+그리고 tuple 안에 4개의 item 밖에 없는 상태이다
+이 code 는 tuple 안에 있는 각각의 item 으로 code 를 실행시키는거 같다
+한 가지 tuple 을 더 추가해보자
+'''
+
+
+websites = (
+  "google.com",
+  "airbnb.com",
+  "twitter.com",
+  "facebook.com",
+  "tiktok.com"
+)
+
+for each in websites:
+  print("hello")
+  
+'''
+5번 출력됨을 확인하였고, 이제 tuple 각각의 item 에 code 를 실행시킬 수 있게 되었다
+이 code 는 () tuple 뿐만 아니라 [] list 에서도 가능하다. 집합체라면 무엇이든 가능하다
+'''
+
+
+'''
+이제 필요한 것은 "현재 처리중인 item 은 무엇인지 알 수 있느냐?" 이다
+print("hello") 에서 airbnb 나 twitter 가 작동할 때, 
+이 중에 어떤 걸 처리 중인지 말이다.
+지금 cycle의 어디를 처리중일까?
+
+아래 list 에서 어떤 item 을 작업하고 있는지 알아보고자 하는데
+바로 지금이 each 의 기능을 사용할 때다
+for 문은 사용할 때 각각의 item 이 실행될 때
+placeholder 를 만드는 것을 허락해준다
+placeholder 의 이름은 원하는 대로 정할 수 있다
+
+"potato is equals to" 라고 print 에 작성하고
+각 cycle 에서 potato 가 무엇인지 확인해본다
+'''
