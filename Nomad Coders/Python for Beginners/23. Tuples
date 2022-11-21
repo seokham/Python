@@ -1,6 +1,7 @@
 '''
 Tuple 과 list 의 차이점은
-Tuple 은 불변성을 가지게 된다. 즉, Tuple 을 변경하지 못한다는 것
+Tuple 은 불변성을 가지게 된다.
+즉, Tuple 을 변경하지 못한다는 것
 '''
 
 days = ["Mon","Tue","Wed"]        # 이게 바로 list 이다. 그럼 Tuple 는 어떻게 만들까?
