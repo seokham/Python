@@ -32,8 +32,10 @@ print(days_of_week)
 days_of_week = ["Mon","Tue","Thur","Fri"]    # list 를 쓰려면 [] 대괄호를 써야한다
 print(days_of_week)
 
-# 실행해보면 출력 형태가 길기만 하고 결과는 비슷하다고 느껴질 것이다.
-# 그건 아직 Method 를 배우지 않아서 그렇다
+'''
+실행해보면 출력 형태가 길기만 하고 결과는 비슷하다고 느껴질 것이다.
+그건 아직 Method 를 배우지 않아서 그렇다
+'''
 
 name = "KARINA"            # "KARINA" 는 단순한 TEXT 가 아니다 사실 이 TXT는 내부에 다양한
                            # function 들을 가지고 있다
@@ -45,6 +47,7 @@ print, input 등은 data 와 결합되어 있지 않다
 우리가 쓰고 싶을 때 어디서나 쓸 수 있는 function 이다
 endswith 은 String 에서만 사용할 수 있는 function 이다
 '''
+
 
 # 위 code 를 아래처럼 바꿀 수도 있다
 
