@@ -16,13 +16,13 @@ print(f"Hello I'm {my_name}, I have {my_age} years in the earth, {my_color_eyes}
 # 출력 결과 : Hello I'm KARINA, I have 12 years in the earth, brown is my eye color
 
 
-"""
+'''
 print(f" 와 print(" 의 차이를 볼 수 있다. 
 f 라는 문자가 없을 때는 code 를 문장처럼 그대로 출력한다
 f 라는 문자가 있을 때는 값이 대입되어 출력이 되었다
 f 와 ""(따옴표) 그리고 TEXT를 기억해두고 넘어간다
 이제 return 의 개념을 이해해보자
-"""
+'''
 
 
 # 쥬스를 만드는 function 을 만들고 싶은데, 쥬스에 얼음을 넣고 그리고 설탕을 넣는 function 이다
@@ -42,35 +42,35 @@ perfect_juice = add_sugar(cold_juice)
 
 print(perfect_juice)
 
-"""
+'''
 juice 는 make_juice function의 return 값과 동일한 variable 이다
 cold_juice 는 add_ice function의 return 값과 동일한 variable 이다
 perfect_juice 는 add_sugar function의 return 값과 동일한 variable 이다
-"""
+'''
 
-"""
+'''
 juice = "🍎+🧋"
 cold_juice = "🍎+🧋+🧊"
 perfect_juice = "🍎+🧋+🧊+🍬"
-"""
+'''
 
-"""
+'''
 make_juice 는 받은 사과에 주스를 더해서 returen 해준다
 make_juice 를 add_ice function 에 보내준다
 add_ice function 은 주스에 얼음을 추가해 returen 해준다
 cold_juice 는 과일,주스,얼음을 포함한 cold_juice variable 를 add_sugar function 에 보낸다
-add_sugar function 은 과일,주스,얼음에 설탕을 추가해 return 해준
-"""
+add_sugar function 은 과일,주스,얼음에 설탕을 추가해 return 해준다
+'''
 
-"""
+'''
 return 은 function 밖으로 값을 보내준다
 Python 그 값을 가져다 code 상에 대입해준다
-"""
+'''
 
-"""
+'''
 return 은 function 을 끝내버린다
 print("lalalala") 를 추가로 입력해도 lalalala 는 절대 출력되지 않는다
-"""
+'''
 
 def make_juice(fruit):            
   return f"{fruit}+🧋"                # return 을 쓰면 Python 이 실행시킬 마지막 code 가 되버린다
@@ -89,11 +89,11 @@ perfect_juice = add_sugar(cold_juice)
 print(perfect_juice)
 
 
-"""
+'''
 Python 은 make_juice 를 실행한다. 사과를 첫번째 argument 로 넣은 상태로..
 Python 은 make_juice function 안으로 들어가서 function 을 읽는다
 Python 은 return 을 읽을테고 return 을 본 순간 call 한 function 을 return 값으로 교체한다
 교체된 코드의 모습이다. juice = "🍎+🧋"
 한번 값을 준 상태라면 그 function 을 끝내버린다. 그럼 그 function 은 작동을 멈추게 된다
 그래서 return 이후의 code 를 아예 읽지 않는다. 그래서 print code 가 작동하지 않았던 것이다!
-"""
+'''
