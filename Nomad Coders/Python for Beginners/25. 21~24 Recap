@@ -1,1 +1,56 @@
-1
+print("karina".upper())                 # 소문자를 대문자로 출력해주는 method
+
+print("karina".endswith("a"))           # True 문자 확인 method
+
+print("karina".endswith("b"))           # False 문자 확인 method
+
+
+player = {
+  'name' : 'KARINA',
+  'age' : 12,
+  'alive' : True,
+  'fav_food' : ["🍕","🍔"],
+  'friend' : {
+    'name' : "WINTER",
+    'fav_food' : ["🍎"]
+  }
+}
+
+print(player['friend']['fav_food'])     # index 사용없이 사과를 가져왔다. 직접적으로 값을 가져왔고
+                                        # [] 를 써서 그 안에 key 의 이름을 썼다
+
+'''
+name, age, alive, fav_food, friend 등은 key 다
+dictionary 는 mutable 하다
+data 를 추가, 삭제, 수정이 가능하다
+'''
+
+
+player = {
+  'name' : 'KARINA',
+  'age' : 12,
+  'alive' : True,
+  'fav_food' : ("🍕","🍔"),
+  'friend' : {
+    'name' : "WINTER",
+    'fav_food' : ["🍎"]
+  }
+}
+
+player['fav_food'] = "🍎"
+player.pop("alive")
+
+print(player)
+
+'''
+player['fav_food'] = "🍎"
+위의 player dic code 에서 player 를 만들었고, fav_food 라는 듀플을 작성했었다
+fav_food 는 우리가 작성한대로 🍎 가 될것이다
+이것이 data 를 update 한것이다
+'''
+
+'''
+player.pop("alive")
+alive 의 key 값을 없애버린다는 code 다
+dic 안의 () list 뿐만 아니라, [] tuple 도 update 가 가능하다
+'''
