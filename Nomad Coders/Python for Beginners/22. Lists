@@ -11,7 +11,10 @@ days_of_week = ["Mon","Tue","Wen","Thur","Fri"]
 
 print(days_of_week.count("Wen"))                  # count 는 갯수를 세어준다
 
-# list 의 장점 하나를 확인했다. data 에 적용 가능한 멋진 method 를 사용할 수 있는 것이다
+'''
+list 의 장점 하나를 확인했다. 
+data 에 적용 가능한 멋진 method 를 사용할 수 있는 것이다
+'''
 
 
 '''
@@ -30,6 +33,7 @@ print(days_of_week)
 '''
 list 를 쓰는 데는 장점이 있다
 data 가공에 도움을 주는 너무나 멋진 method 를 사용할 수 있다
+
 append(추가) method 로 토요일을 추가시켜보자
 '''
 
@@ -47,9 +51,11 @@ print(days_of_week)
  '''
 list 에 있는 특정 item 에 접근할 수 있는 방법이다
 만약 3번째 item 을 원한다면 어떻게 할까?
+
 먼저 list 를 가리키는 variable 에 접근해서
 [] 를 열고 안에 접근 하고 싶은 item 의 index를
 넣어주면 된다
+
 ["Mon","Tue","Wen","Thur","Fri"]
 왼쪽 월요일 부터 0, 1, 2, 3, 4 이다
 '''
