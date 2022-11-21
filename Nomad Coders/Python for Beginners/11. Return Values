@@ -1,4 +1,7 @@
-# function 내에서 무언가를 출력하는 것 뿐만 아니라 function 으로부터 값을 받는 것도 배워보자
+'''
+function 내에서 무언가를 출력하는 것 뿐만 아니라
+function 으로부터 값을 받는 것도 배워보자
+'''
 
 def tax_calc(money):
   print(money * 0.35)
@@ -33,17 +36,19 @@ to_pay = tax_calc(1000)              # to_pay 라는 variable 을 추가해보�
 pay_tax(to_pay)                      # 그렇다면 pay_tax() 의 () 안에 to_pay variable 을 넣을 수 있다는 것이다
                                      # 실행해보면 잘 동작한다
 
-"""
+'''
 return 은 함수 바깥으로 보낸다는 의미를 가지고 있다
-return(money * 0.35) 을 사용함으로 값을 tax_calc(1000) 여기에 주고 이 값은 to_pay 와 동일한 값을 가지게 되며
-to_pay 는 pay_tax(to_pay) 를 통해 call 되어, pay_tax(tax) 로 전달되어 print 에 의해 출력되는 것이다
-"""
+return(money * 0.35) 을 사용함으로 값을 tax_calc(1000) 여기에 주고
+이 값은 to_pay 와 동일한 값을 가지게 되며
+to_pay 는 pay_tax(to_pay) 를 통해 call 되어
+pay_tax(tax) 로 전달되어 print 에 의해 출력되는 것이다
+'''
 
 
-"""
+'''
 학습자는 code 순서 때문에 헷갈릴 수 있다
 code 순서를 바꾸어도 결과 값은 동일하다
-"""
+'''
 
 # 아래 function 밖에서 1000 을 넣는 것이 먼저이다
 
@@ -51,6 +56,7 @@ def tax_calc(money):
   return(money * 0.35)        
 
 to_pay = tax_calc(1000)
+
 
 # 아래 function 밖에서 return 된 to_pay 값을 넣는 것이 먼다다
 
@@ -70,10 +76,12 @@ def pay_tax(tax):
 
 pay_tax(tax_calc(1000))
 
-"""
+'''
 위 code 를 다시 설명하자
-tax_calc 을 1000 값으로 call 하면, 우리에게 350 이라는 값을 주고
+tax_calc 을 1000 값으로 call 하면
+우리에게 350 이라는 값을 주고
 350 이라는 값을 pay_tax 를 call 하는데 쓰인다
 그럼 pay_tax 가 thank u for paying 350.0 을 출력한다
-return 을 이용해 function 으로 부터 값을 받아낼 수 있기 때문에 유용하다
-"""
+return 을 이용해 function 으로 부터
+값을 받아낼 수 있기 때문에 유용하다
+'''
