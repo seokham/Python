@@ -1,1 +1,149 @@
-1
+'''
+지난 시간에 이어 website 를 출력하는 것 대신에
+get(website) 를 할 것이다
+
+get function 은 response 를 return 해준다
+response 는 website 의 응답이다
+
+get(website) 이라는 function 이 무언가를
+return 해주기 때문에 그 값을 가져올 것이다
+'''
+
+
+from requests import get
+
+websites = (
+  "google.com",
+  "airbnb.com",
+  "https://twitter.com",
+  "facebook.com",
+  "https://tiktok.com"
+)
+
+for website in websites:
+  if not website.startswith("https://"):
+    website = f"https://{website}"
+  response = get(website)
+  print(response)
+  
+'''
+출력 결과는 <Response [200]> 가 나오는데
+이것의 의미는 website 가 성공적으로 응답
+했다는 것이다
+
+internet 은 HTTP Protocol 에 기반한다
+그래서 Computer 들이 서로 소통하는 방식은
+당연하게도 HTTP Request 다
+
+그래서 Request 가 정상인지 아닌지 알 수
+있는 수단이 필요한데
+Request 의 결과를 확인하는 방법으로
+HTTP 의 상태 code 를 사용한다
+
+여러 상태 code가 있지만
+그 중 code 200 은 OK 이다
+'''
+
+
+'''
+<Response [200]> 가 String 형식인데
+숫자 code만 출력하도록 해보자
+
+print(response) 에서
+response 뒤에 . 을 입력하면
+status_code 가 보일 것이다
+'''
+
+from requests import get
+
+websites = (
+  "google.com",
+  "airbnb.com",
+  "https://twitter.com",
+  "facebook.com",
+  "https://tiktok.com"
+)
+
+for website in websites:
+  if not website.startswith("https://"):
+    website = f"https://{website}"
+  response = get(website)
+  print(response.status_code) 
+
+
+'''
+이제 우리는 필요한 것들을 갖췄다
+website 가 성공적으로 응답하는 지를 알게 되었다
+
+상태 code 를 얻었다면
+그 code 200과 같으면
+website is OK 이고 
+다르면 website is not OK 라는
+결과를 출력하는 code 를 작성해보자
+'''
+
+from requests import get
+
+websites = (
+  "google.com",
+  "airbnb.com",
+  "https://twitter.com",
+  "facebook.com",
+  "https://tiktok.com"
+)
+
+for website in websites:
+  if not website.startswith("https://"):
+    website = f"https://{website}"
+  response = get(website)
+  
+  if response.status_code == 200:
+    print(f"{website} is OK")
+  
+  else:
+    print(f"{website} not OK")
+
+
+'''
+OK, Fail 같은 응답으로 dictionary 를 만들어보자
+
+1) results = {}
+results 라는 dictionary 를 만든다
+
+2) results[website] = "OK"
+
+3) results dictionary 안에 새로운 entry 를 추가한다
+   results[] 안에 website 를 넣을 것이다
+   즉, google 이라는 key 를 dictionary 안에 만드는 것이다
+   results[website] 
+
+results = {
+  "https://google.com"
+}
+
+'''
+
+from requests import get
+
+results = {}
+
+websites = (
+  "google.com",
+  "airbnb.com",
+  "https://twitter.com",
+  "facebook.com",
+  "https://tiktok.com"
+)
+
+for website in websites:
+  if not website.startswith("https://"):
+    website = f"https://{website}"
+  response = get(website)
+  
+  if response.status_code == 200:
+    results[website] = "OK"
+
+  else:
+    results[website] = "FAILED"
+
+print(results)
