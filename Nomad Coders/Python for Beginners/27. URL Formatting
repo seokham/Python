@@ -24,9 +24,8 @@ list 안의 item 으로 바뀐다
 '''
 무언가가 True 인지는 어떻게 판단하면 좋을까?
 if 를 사용하면 된다
-websidte 는 String 이니까 . 으로 method 를
-추가한다
-
+websidte 는 String 이니까
+. 으로 method 를 추가한다
 '''
 
 websites = (
@@ -86,7 +85,7 @@ not 은 처음 보는 code 일텐데
 '''
 
 
- '''
+'''
 이제 website 를 {website} 로 표기해보자
 {website} 는 hhtps:// 가 없는 website 이고
 우리는 그걸 https://{website} 로 업데이트 할 것이다
