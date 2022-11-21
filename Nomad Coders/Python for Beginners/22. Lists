@@ -8,7 +8,6 @@ argument 도 있고, return 할 수도 있다
 # list 와 결합된 method 들을 한번 보자
 
 days_of_week = ["Mon","Tue","Wen","Thur","Fri"]
-
 print(days_of_week.count("Wen"))                  # count 는 갯수를 세어준다
 
 '''
@@ -18,15 +17,13 @@ data 에 적용 가능한 멋진 method 를 사용할 수 있는 것이다
 
 
 '''
-clear 는 list 를 완전 히 바꿨다(modify)
+clear 는 list 를 완전히 바꿨다(modify)
 modify(수정하다) 는 mutate(변화시키다) 의 의미를 가진다
 clear method 는 days_of_week 를 mutate 한다고 볼 수 있다
 '''
 
 days_of_week = ["Mon","Tue","Wen","Thur","Fri"]
-
 days_of_week.clear()
-
 print(days_of_week)
 
 
@@ -40,11 +37,9 @@ append(추가) method 로 토요일을 추가시켜보자
 days_of_week = ["Mon","Tue","Wen","Thur","Fri"]
 
 days_of_week.append("Sat")
-
 print(days_of_week)
 
 days_of_week.append("Sun")
-
 print(days_of_week)
 
 
@@ -60,7 +55,5 @@ list 에 있는 특정 item 에 접근할 수 있는 방법이다
 왼쪽 월요일 부터 0, 1, 2, 3, 4 이다
 '''
 
-
 days_of_week = ["Mon","Tue","Wen","Thur","Fri"]
-
 print(days_of_week[2])
