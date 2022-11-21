@@ -18,11 +18,16 @@ say_hello()              # 하지만 여기서는 error가 발생한다
                          # () 안에 argument 를 보내지 못 했기 때문에 error 발생
 
 
-"""
-argument 를 보내지 않을 때는 anonymous 유저에게 "hello" 라고 하는 문장을 출력해보자
-say_hello("KARINA") 에서 KARINA 로 user_name 에 전달하면 hello KARINA 라고 출력된다
-say_hello() 에서 () 에 name 이 없을 땐 anonymous 로 출력되게 만들어본다
-"""
+'''
+argument 를 보내지 않을 때는 anonymous 유저에게
+"hello" 라고 하는 문장을 출력해보자
+
+say_hello("KARINA") 에서 KARINA 로 
+user_name 에 전달하면 hello KARINA 라고 출력된다
+
+say_hello() 에서 () 에 name 이 없을 땐
+anonymous 로 출력되게 만들어본다
+'''
 
 def say_hello(user_name=):
   print("hello", user_name)
@@ -41,7 +46,8 @@ say_hello()                              # () 안에 argument 가 없으니 Pyth
                                          # 즉, print("hello", user_name) 이곳 user_name 으로 anonymous 가 들어간다
 
 
-"""
-기본값을 사용하면 이렇게 유용하다 사용자들에게 error 를 보여주지 않게 해준다
+'''
+기본값을 사용하면 이렇게 유용하다
+사용자들에게 error 를 보여주지 않게 해준다
 사용자가 parameter 없이 함수를 호출하 경우를 관리해준다
-"""
+'''
