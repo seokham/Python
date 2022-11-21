@@ -6,11 +6,13 @@ list, Tuple 에도 method 가 있고, player dictionary 에도 있다
 player = {
   'name' : 'KARINA',
   'age' : 12,
-  'alive' : True 
+  'alive' : True,
+  'fav_food' : ["🍕","🍔"]
 }
-print(player.get('age'))      # player 에 . 을 입력하고 나오는 method 를 확인해보자
-                              # user 의 age 를 가져와보자 code 를 실행한다
-                              # 정상적으로 age 의 값을 가져왔다
+print(player.get('age'))        # player 에 . 을 입력하고 나오는 method 를 확인해보자
+print(player.get('fav_food'))   # user 의 age 를 가져와보자 code 를 실행한다
+                                # 정상적으로 age 의 값을 가져왔다
+
 
 '''
 이 code 는 list 와는 굉장히 다르다
@@ -24,7 +26,27 @@ KARINA, 12, True 는 value 이다
 '''
 dictionary 용도와 list 의 용도는 아주 다르다
 숫자 목록이나 TODO 목록, 어떠한 목록이 있다면 그건 list 나 Tuple 가 될 수 있다
-
+dictionary 는 많은 property(속성) 을 가지고 있는 data 를 만들 때 사용한다
 '''
 
-4분 1초
+
+player = {
+  'name' : 'KARINA',
+  'age' : 12,
+  'alive' : True,
+  'fav_food' : ["🍕","🍔"]
+}
+print(player)                 # player dic 모두 출력
+print(player.pop('age'))      # player method 사용후 age 출력
+print(player)                 # 다시 player dic 모두 출력하면 age 를 제외한 값만 출력
+
+
+player = {
+  'name' : 'KARINA',
+  'age' : 12,
+  'alive' : True,
+  'fav_food' : ["🍕","🍔"]
+}
+print(player)
+player['xp'] = 1500           # xp 를 추가해서 한번 더 출력해본다
+print(player)
