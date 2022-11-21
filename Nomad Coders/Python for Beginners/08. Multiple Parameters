@@ -1,17 +1,31 @@
-# parameter 는 function 으로 전달하는 data 를 데이터를 저장하기 위한 placeholder 라고 배웠다
-# parameter 를 추가할 때는 ,(콤마) 를 쓰고 다른 parameter 를 추가하면 된다
+'''
+parameter 는 function 으로 전달하는 data 를
+저장하기 위한 placeholder 라고 배웠다
+parameter 를 추가할 때는 ,(콤마) 를 쓰고 
+다른 parameter 를 추가하면 된다
+'''
 
-def say_hello(name, age):                # age parameter 를 추가하여 2개의 데이터를 위한 공간을 만들었다
+def say_hello(name, age):                # age parameter 를 추가하여 2개의 data 를 위한 space을 만들었다
   print("hello", name, "how are you?")
 
-say_hello("KARINA")                      # 첫 번째 data 는 student 가 되겠지만 두 번째 data 는 존재하지 않아서
-                                         # code 를 실행하면 age 라는 필수 argument 가 없다는 error 가 발생한다
-                                         # say_hello(): function 는 2 개의 data 를 받는다고 정의했기 때문이다 
-                                         # call(호출) 은 call = () = 실행버튼 이다
+say_hello("KARINA")
 
+'''
+위 code 를 실행하면 첫 번째 data 는 KARINA 가 되겠지만
+두 번째 data 는 존재하지 않아서
+code 를 실행하면 age 라는 필수 argument 가 없다는 error 가 발생한다
+say_hello(): function 는 2 개의 data 를 받는다고 정의했기 때문이다 
+call(호출) 은 "call = () = 실행버튼" 이다
+'''
+
+
+'''
+say_hello() function 을 call 할 때
+두 번째 argument 까지 보내준다
+보내줄 data 의 순서도 맞게 잘 작성해야한다
+'''
 
 def say_hello(name, age):                
   print("hello", name, "how are you?")
   print("you are", age, "years old")
-say_hello("KARINA", 12)                  # say_hello() function 을 call 할 때 두 번째 argument 까지 보내준다
-                                         # 보내줄 data 의 순서도 맞게 잘 작성해야한다
+say_hello("KARINA", 12)
