@@ -1,7 +1,7 @@
-"""
+'''
 function 은 작성해서 여러번 재사용이 가능한 code
-parameter 는 function 안으로 data 를 보내 함수의 결과를 바꿀 수 있게 해주 것
-"""
+parameter 는 function 안으로 data 를 보내 function 의 결과를 바꿀 수 있게 해주 것
+'''
 
 
 def tax_calculator():                    # function 이름에는 공백이 있어선 안되고, 숫자로 시작할 수도 없다
