@@ -1,1 +1,128 @@
-1
+websites = (
+  "google.com",
+  "airbnb.com",
+  "https://twitter.com",
+  "facebook.com",
+  "https://tiktok.com"
+)
+
+for website in websites:     
+  print(websites)
+
+'''
+fot 옆 website 라는 variable 은
+차례대로 각 Cycle 에서
+list 안의 item 으로 바뀐다
+첫 번째 variable 은 google.com 이 되고
+두 번째 variable 은 airbnb 가 되고
+            .
+            .
+            .
+'''
+
+
+'''
+무언가가 True 인지는 어떻게 판단하면 좋을까?
+if 를 사용하면 된다
+websidte 는 String 이니까 . 으로 method 를
+추가한다
+
+'''
+
+websites = (
+  "google.com",
+  "airbnb.com",
+  "https://twitter.com",
+  "facebook.com",
+  "https://tiktok.com"
+)
+
+for website in websites:
+  if website.startswith("https://"):       # 만약 https:// 로 시작하면 바로 이동해도 된다는 의미
+    print("good to go")
+  else:                                    # 아니라면 바로 아랫줄 print 를 출력한다
+    print("we have to fix it")
+
+'''
+처음으로 if 문 안에서 method 를 사용해봤다
+
+if 는 오직 무언가가 True 인지 False 인지 판단한다
+
+startswith 은 우리에게 Boolean 을 준다
+https:// 로 시작하는 것에 대해
+True 인지 False 인지 알려준다
+
+이제 good to go 를 출력하지 않는 방법으로
+code 를 작성해보자
+
+https:// 로 시작되지 않는 것에 대해 집중할 것이다
+'''
+
+
+websites = (
+  "google.com",
+  "airbnb.com",
+  "https://twitter.com",
+  "facebook.com",
+  "https://tiktok.com"
+)
+
+for website in websites:
+  if not website.startswith("https://"):
+    print("have a fix")
+
+'''
+전 보다 code 가 짧아졌다
+True 일 때 good to go 룰 출력하고
+False 일 때 have a fix 를 출력했었다
+
+지금은 False 일 때를 처리하는 중요한
+부분만 가지고 있다
+
+not 은 처음 보는 code 일텐데
+"if website.startswith("https://") == False:"
+"website 가 https:// 로 시작하는가? 의 값이 False 와 같다"
+라고 표현하는 것과 같다
+'''
+
+
+ '''
+이제 website 를 {website} 로 표기해보자
+{website} 는 hhtps:// 가 없는 website 이고
+우리는 그걸 https://{website} 로 업데이트 할 것이다
+'''
+
+websites = (
+  "google.com",
+  "airbnb.com",
+  "https://twitter.com",
+  "facebook.com",
+  "https://tiktok.com"
+)
+
+for website in websites:
+  if not website.startswith("https://"):
+    website = f"https://{website}"
+  print(website)
+  
+'''
+google.com, airbnb.com, facebook.com
+가 모두 https:// 가 추가되어 수정이 되었다
+
+정리해보자
+True 또는 False 를 return 하는 method 를 사용했고
+확인하고 싶은 website 가 https:// 로 시작하는지 물어보고
+website 가 https:// 로 시작하지 않으면
+해당 website 를 가져와서
+website variable 은 이제 https:// 에 website 를
+붙인 값으로 update 해준다
+
+이미 https:// 가 붙어있는 twitter 나 tiktok 도
+출력된 이유는 "print(website)" code 가
+모든 website 에서 작동하도록 되어있기 때문이다
+
+자세하게 설명하자면
+print 는 if code 와 같은 줄에 작성되어서 그렇다
+print 가 if 안에 입력되었다면 twitter 와 tiktok 은
+출력되지 않았을 것이다
+'''
